@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tren_win_form", "Tren_win_form.csproj", "{737C1124-C9B3-4A31-9B50-67FF9EA0CFCE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{737C1124-C9B3-4A31-9B50-67FF9EA0CFCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{737C1124-C9B3-4A31-9B50-67FF9EA0CFCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{737C1124-C9B3-4A31-9B50-67FF9EA0CFCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{737C1124-C9B3-4A31-9B50-67FF9EA0CFCE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44EC58F1-47CB-4A7E-9C59-21AFA33E87DF}
+	EndGlobalSection
+EndGlobal
