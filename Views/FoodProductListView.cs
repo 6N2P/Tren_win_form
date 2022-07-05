@@ -21,10 +21,22 @@ namespace Tren_win_form.Views
         }
 
         public event EventHandler AddProductEvent;
+        public event EventHandler СalorieСalculation;
+        public event EventHandler CalorieCalculationNorm;
 
         private void AddProductButton_Click(object sender, EventArgs e)
         {
             AddProductEvent.Invoke(sender, e);
+        }
+
+        private void CalculatedCaloriesLabel_Click(object sender, EventArgs e)
+        {
+            СalorieСalculation.Invoke(sender, e);
+        }
+
+        private void caloriNormLabel_Click(object sender, EventArgs e)
+        {
+            CalorieCalculationNorm.Invoke(sender, e);
         }
     }
 }
