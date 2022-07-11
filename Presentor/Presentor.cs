@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Tren_win_form.Views;
 using Tren_win_form.Models;
+using Tren_win_form.Data;
 
  namespace Tren_win_form.Presentor
 {
@@ -16,6 +17,8 @@ using Tren_win_form.Models;
         FoodProductListView foodProductListView;
         AddProductView addProductVie;
         Calorie calorieCalc;
+        ApplicationContecst db;
+
         
         public Presentor(StartView startView)
         {
@@ -25,6 +28,7 @@ using Tren_win_form.Models;
 
         public Presentor(FoodProductListView foodProductList)
         {
+            db = new ApplicationContecst();
             foodProductListView = foodProductList;
             foodProductListView.AddProductEvent += FoodProductListView_AddProductEent;
             foodProductListView.СalorieСalculation += FoodProductListView_СalorieСalculation;
@@ -161,5 +165,7 @@ using Tren_win_form.Models;
             foodProductListView = new FoodProductListView();
             foodProductListView.Show();
         }
+
+        
     }
 }
