@@ -51,15 +51,16 @@ namespace Tren_win_form.Views
             this.calculatedCaloriesLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label11 = new System.Windows.Forms.Label();
+            this.dbListBox = new System.Windows.Forms.ListBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(423, 138);
+            this.label5.Location = new System.Drawing.Point(423, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 52);
+            this.label5.Size = new System.Drawing.Size(31, 33);
             this.label5.TabIndex = 17;
             this.label5.Text = "Кол-во порций";
             // 
@@ -68,10 +69,10 @@ namespace Tren_win_form.Views
             this.ageTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ageTextBox.Location = new System.Drawing.Point(549, 95);
+            this.ageTextBox.Location = new System.Drawing.Point(549, 76);
             this.ageTextBox.Multiline = true;
             this.ageTextBox.Name = "ageTextBox";
-            this.ageTextBox.Size = new System.Drawing.Size(44, 40);
+            this.ageTextBox.Size = new System.Drawing.Size(44, 27);
             this.ageTextBox.TabIndex = 13;
             this.ageTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -83,7 +84,7 @@ namespace Tren_win_form.Views
             this.caloriNormLabel.AutoSize = true;
             this.caloriNormLabel.Location = new System.Drawing.Point(685, 0);
             this.caloriNormLabel.Name = "caloriNormLabel";
-            this.caloriNormLabel.Size = new System.Drawing.Size(46, 46);
+            this.caloriNormLabel.Size = new System.Drawing.Size(46, 33);
             this.caloriNormLabel.TabIndex = 16;
             this.caloriNormLabel.Text = "caloriNormLabel";
             this.caloriNormLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -101,7 +102,7 @@ namespace Tren_win_form.Views
             "3 раза в неделю тренеровка 1,55",
             "Активный стиль жизни 1,725",
             "Спортик 1,9"});
-            this.coaficComboBox.Location = new System.Drawing.Point(463, 141);
+            this.coaficComboBox.Location = new System.Drawing.Point(463, 109);
             this.coaficComboBox.Name = "coaficComboBox";
             this.coaficComboBox.Size = new System.Drawing.Size(268, 21);
             this.coaficComboBox.TabIndex = 15;
@@ -110,10 +111,10 @@ namespace Tren_win_form.Views
             // growTextBox
             // 
             this.growTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.growTextBox.Location = new System.Drawing.Point(685, 95);
+            this.growTextBox.Location = new System.Drawing.Point(685, 76);
             this.growTextBox.Multiline = true;
             this.growTextBox.Name = "growTextBox";
-            this.growTextBox.Size = new System.Drawing.Size(46, 40);
+            this.growTextBox.Size = new System.Drawing.Size(46, 27);
             this.growTextBox.TabIndex = 14;
             this.growTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -123,9 +124,9 @@ namespace Tren_win_form.Views
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(599, 92);
+            this.label10.Location = new System.Drawing.Point(599, 73);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(80, 46);
+            this.label10.Size = new System.Drawing.Size(80, 33);
             this.label10.TabIndex = 12;
             this.label10.Text = "Рост";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -136,16 +137,16 @@ namespace Tren_win_form.Views
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(463, 92);
+            this.label9.Location = new System.Drawing.Point(463, 73);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(80, 46);
+            this.label9.Size = new System.Drawing.Size(80, 33);
             this.label9.TabIndex = 11;
             this.label9.Text = "Возраст";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // AddProductButton
             // 
-            this.AddProductButton.Location = new System.Drawing.Point(3, 375);
+            this.AddProductButton.Location = new System.Drawing.Point(3, 334);
             this.AddProductButton.Name = "AddProductButton";
             this.AddProductButton.Size = new System.Drawing.Size(159, 23);
             this.AddProductButton.TabIndex = 0;
@@ -177,9 +178,9 @@ namespace Tren_win_form.Views
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(463, 46);
+            this.label3.Location = new System.Drawing.Point(463, 33);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 46);
+            this.label3.Size = new System.Drawing.Size(80, 40);
             this.label3.TabIndex = 5;
             this.label3.Text = "Каллории из таблицы";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -193,7 +194,7 @@ namespace Tren_win_form.Views
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(463, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 46);
+            this.label1.Size = new System.Drawing.Size(80, 33);
             this.label1.TabIndex = 1;
             this.label1.Text = "Настоящий вес";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -204,9 +205,9 @@ namespace Tren_win_form.Views
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(549, 46);
+            this.label6.Location = new System.Drawing.Point(549, 33);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(44, 46);
+            this.label6.Size = new System.Drawing.Size(44, 40);
             this.label6.TabIndex = 8;
             this.label6.Text = "label6";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -217,7 +218,7 @@ namespace Tren_win_form.Views
             this.massTextBox.Location = new System.Drawing.Point(549, 3);
             this.massTextBox.Multiline = true;
             this.massTextBox.Name = "massTextBox";
-            this.massTextBox.Size = new System.Drawing.Size(44, 40);
+            this.massTextBox.Size = new System.Drawing.Size(44, 27);
             this.massTextBox.TabIndex = 3;
             this.massTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -229,7 +230,7 @@ namespace Tren_win_form.Views
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(599, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 46);
+            this.label2.Size = new System.Drawing.Size(80, 33);
             this.label2.TabIndex = 2;
             this.label2.Text = "Каллории для поддержания";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -240,9 +241,9 @@ namespace Tren_win_form.Views
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(599, 46);
+            this.label4.Location = new System.Drawing.Point(599, 33);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 46);
+            this.label4.Size = new System.Drawing.Size(80, 40);
             this.label4.TabIndex = 6;
             this.label4.Text = "Нужное кол-во калорий";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -253,9 +254,9 @@ namespace Tren_win_form.Views
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.calculatedCaloriesLabel.AutoSize = true;
-            this.calculatedCaloriesLabel.Location = new System.Drawing.Point(685, 46);
+            this.calculatedCaloriesLabel.Location = new System.Drawing.Point(685, 33);
             this.calculatedCaloriesLabel.Name = "calculatedCaloriesLabel";
-            this.calculatedCaloriesLabel.Size = new System.Drawing.Size(46, 46);
+            this.calculatedCaloriesLabel.Size = new System.Drawing.Size(46, 40);
             this.calculatedCaloriesLabel.TabIndex = 7;
             this.calculatedCaloriesLabel.Text = "Calories";
             this.calculatedCaloriesLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -264,14 +265,14 @@ namespace Tren_win_form.Views
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 8;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.81815F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 31.81816F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20.15162F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.454207F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.454207F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.454208F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5.454208F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.72267F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.838228F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.838229F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.72267F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.838228F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.838229F));
             this.tableLayoutPanel1.Controls.Add(this.calculatedCaloriesLabel, 7, 1);
             this.tableLayoutPanel1.Controls.Add(this.label4, 6, 1);
             this.tableLayoutPanel1.Controls.Add(this.label2, 6, 0);
@@ -280,42 +281,60 @@ namespace Tren_win_form.Views
             this.tableLayoutPanel1.Controls.Add(this.label1, 4, 0);
             this.tableLayoutPanel1.Controls.Add(this.label3, 4, 1);
             this.tableLayoutPanel1.Controls.Add(this.label7, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.AddProductButton, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.label9, 4, 2);
             this.tableLayoutPanel1.Controls.Add(this.label10, 6, 2);
             this.tableLayoutPanel1.Controls.Add(this.growTextBox, 7, 2);
             this.tableLayoutPanel1.Controls.Add(this.coaficComboBox, 4, 3);
             this.tableLayoutPanel1.Controls.Add(this.caloriNormLabel, 7, 0);
             this.tableLayoutPanel1.Controls.Add(this.ageTextBox, 5, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label5, 3, 3);
             this.tableLayoutPanel1.Controls.Add(this.label8, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label11, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.dbListBox, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.AddProductButton, 0, 11);
+            this.tableLayoutPanel1.Controls.Add(this.label11, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.label5, 3, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 5;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.41868F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.41868F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.41868F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 57.09343F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 8.650519F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(734, 411);
+            this.tableLayoutPanel1.RowCount = 12;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.060957F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10.98298F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.060956F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.8067F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.386052F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.386052F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.386052F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.386052F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.386052F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.386052F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.386052F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 7.386052F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(734, 365);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(383, 138);
+            this.label11.Location = new System.Drawing.Point(383, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(33, 39);
+            this.label11.Size = new System.Drawing.Size(33, 33);
             this.label11.TabIndex = 18;
             this.label11.Text = "Порция в грм.";
+            // 
+            // dbListBox
+            // 
+            this.dbListBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dbListBox.FormattingEnabled = true;
+            this.dbListBox.Location = new System.Drawing.Point(3, 36);
+            this.dbListBox.Name = "dbListBox";
+            this.tableLayoutPanel1.SetRowSpan(this.dbListBox, 3);
+            this.dbListBox.Size = new System.Drawing.Size(227, 110);
+            this.dbListBox.TabIndex = 19;
             // 
             // FoodProductListView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(734, 411);
+            this.ClientSize = new System.Drawing.Size(734, 365);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FoodProductListView";
             this.Text = "FoodProductListView";
@@ -328,14 +347,14 @@ namespace Tren_win_form.Views
         #endregion
 
         private Label label5;
-        public TextBox ageTextBox;
-        public Label caloriNormLabel;
-        public ComboBox coaficComboBox;
+        private TextBox ageTextBox;
+        private Label caloriNormLabel;
+        private ComboBox coaficComboBox;
         private TableLayoutPanel tableLayoutPanel1;
-        public Label calculatedCaloriesLabel;
+        private Label calculatedCaloriesLabel;
         private Label label4;
         private Label label2;
-        public TextBox massTextBox;
+        private TextBox massTextBox;
         private Label label6;
         private Label label1;
         private Label label3;
@@ -343,15 +362,12 @@ namespace Tren_win_form.Views
         private Button AddProductButton;
         private Label label9;
         private Label label10;
-        public TextBox growTextBox;
+        private TextBox growTextBox;
         private Label label8;
         private Label label11;
+        private ListBox dbListBox;
 
-        public int Mass
-        {
-            get => Convert.ToInt32(massTextBox.Text);            
-            set => massTextBox.Text = value.ToString();
-        }
+        
 
 
     }

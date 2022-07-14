@@ -11,7 +11,7 @@ using Tren_win_form.Presentor;
 
 namespace Tren_win_form.Views
 {
-    public partial class StartView : Form
+    public partial class StartView : Form,IStartViews
     {
         public StartView()
         {

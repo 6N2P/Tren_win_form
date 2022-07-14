@@ -13,8 +13,8 @@ using Tren_win_form.Data;
    
   public  class Presentor
     {
-        StartView startView1;
-        FoodProductListView foodProductListView;
+        IStartViews startView1;
+        IFoodPoductListView foodProductListView;
         AddProductView addProductVie;
         Calorie calorieCalc;
         ApplicationContecst db;
@@ -40,7 +40,7 @@ using Tren_win_form.Data;
             double coaficient = 0;
 
 
-            int item = foodProductListView.coaficComboBox.SelectedIndex;
+            int item = foodProductListView.Coafic;
             coaficient = 1;
             switch (item)
             {
@@ -61,36 +61,14 @@ using Tren_win_form.Data;
                     break;
             }
 
-            int mass;
-            if (foodProductListView.massTextBox.Text != "")
-            {
-                mass = Convert.ToInt32(foodProductListView.massTextBox.Text);
-            }
-            else
-            {
-                mass = 0;
-            }
+            int mass = foodProductListView.Mass;           
 
-            int age;
-            if (foodProductListView.ageTextBox.Text != "")
-            {
-                age = Convert.ToInt32(foodProductListView.ageTextBox.Text);
-            }
-            else
-            {
-                age = 0;
-            }
-            int grow;
-            if (foodProductListView.growTextBox.Text != "")
-            {
-                grow = Convert.ToInt32(foodProductListView.growTextBox.Text);
-            }
-            else
-            {
-                grow = 0;
-            }
+            int age = foodProductListView.Age;
+           
+            int grow=foodProductListView.Grow;
+          
             calorieCalc = new Calorie();
-            foodProductListView.caloriNormLabel.Text =
+            foodProductListView.CaloriNormal =
                 calorieCalc.CalorieCalculationNorm(mass, age, grow, coaficient).ToString();
         }
 
@@ -99,7 +77,7 @@ using Tren_win_form.Data;
             double coaficient=0;
 
 
-            int item = foodProductListView.coaficComboBox.SelectedIndex;
+            int item = foodProductListView.Coafic;
             coaficient = 1;
             switch (item)
             {
@@ -120,36 +98,12 @@ using Tren_win_form.Data;
                     break;
             }
 
-            int mass;
-            if (foodProductListView.massTextBox.Text != "")
-            {
-                mass = Convert.ToInt32(foodProductListView.massTextBox.Text);
-            }
-            else
-            {
-                mass = 0;
-            }
-
-            int age;
-            if (foodProductListView.ageTextBox.Text != "")
-            {
-              age= Convert.ToInt32(foodProductListView.ageTextBox.Text);
-            }
-            else
-            {
-                age = 0;
-            }
-            int grow;
-            if (foodProductListView.growTextBox.Text != "")
-            {
-              grow= Convert.ToInt32(foodProductListView.growTextBox.Text);
-            }
-            else
-            {
-                grow = 0;
-            }
+            int mass =foodProductListView.Mass;          
+            int age = foodProductListView.Age;
+            int grow = foodProductListView.Grow;
+          
             calorieCalc = new Calorie();
-            foodProductListView.calculatedCaloriesLabel.Text =
+            foodProductListView.CaloriCalculaet =
                 calorieCalc.CalorieCalculation(mass, age, grow, coaficient).ToString();
 
         }
@@ -163,7 +117,7 @@ using Tren_win_form.Data;
         private void StartView1_openFoodListView(object sender, EventArgs e)
         {
             foodProductListView = new FoodProductListView();
-            foodProductListView.Show();
+             foodProductListView.Show();
         }
 
         

@@ -84,6 +84,7 @@
       <DependentUpon>FoodProductListView.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\IFoodPoductListView.cs" />
+    <Compile Include="Views\IStartViews.cs" />
     <Compile Include="Views\StartView.cs">
       <SubType>Form</SubType>
     </Compile>
