@@ -50,8 +50,8 @@ namespace Tren_win_form.Views
             this.label4 = new System.Windows.Forms.Label();
             this.calculatedCaloriesLabel = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.label11 = new System.Windows.Forms.Label();
             this.dbListBox = new System.Windows.Forms.ListBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -311,15 +311,6 @@ namespace Tren_win_form.Views
             this.tableLayoutPanel1.Size = new System.Drawing.Size(734, 365);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(383, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(33, 33);
-            this.label11.TabIndex = 18;
-            this.label11.Text = "Порция в грм.";
-            // 
             // dbListBox
             // 
             this.dbListBox.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -330,6 +321,15 @@ namespace Tren_win_form.Views
             this.dbListBox.Size = new System.Drawing.Size(227, 110);
             this.dbListBox.TabIndex = 19;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(383, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(33, 33);
+            this.label11.TabIndex = 18;
+            this.label11.Text = "Порция в грм.";
+            // 
             // FoodProductListView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -337,7 +337,7 @@ namespace Tren_win_form.Views
             this.ClientSize = new System.Drawing.Size(734, 365);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "FoodProductListView";
-            this.Text = "FoodProductListView";
+            this.Text = "д";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
